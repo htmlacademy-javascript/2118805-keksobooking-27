@@ -95,11 +95,11 @@ const getRandomArray = (array) => {
 };
 
 //Создает случайные координаты
-const x = getRandomPositiveFloat(35.65000, 35.70000, 5);
-const y = getRandomPositiveFloat(139.7000, 139.80000, 5);
 
 // Создает одно объявление
 const create = () => {
+  const x = getRandomPositiveFloat(35.65000, 35.70000, 5);
+  const y = getRandomPositiveFloat(139.7000, 139.80000, 5);
   return {
     author: {
       avatar: getAvatarNumber(),
@@ -126,4 +126,3 @@ const create = () => {
 
 // Генерирует 10 объявлений
 const generation = new Array(OFFERS_COUNT).fill('').map(() => create());
-generation
