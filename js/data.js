@@ -86,6 +86,5 @@ const create = () => {
 };
 
 // Генерирует 10 объявлений
-const generation = new Array(OFFERS_COUNT).fill('').map(() => create());
-export {generation};
-export {OFFERS_COUNT};
+const createOffers = () => new Array(OFFERS_COUNT).fill('').map(() => create());
+export {createOffers, OFFERS_COUNT};

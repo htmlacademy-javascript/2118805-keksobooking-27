@@ -1,2 +1,2 @@
-import {generation} from './data.js';
-console.log(generation);
+import {createOffers} from './data.js';
+console.log(createOffers());
